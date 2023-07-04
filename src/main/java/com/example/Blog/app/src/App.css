@@ -2,37 +2,104 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background-color: #273746;
+  height: 80px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  color: white;
+  text-decoration: none;
+  margin: 1%;
+  font-size: 25px;
+}
+
+/* START CREATE POST */
+.createPostPage {
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.postContainer {
+  height: auto;
+  width: 500px;
+  padding: 20px;
+  background-color: #273746;
+  border-radius: 10px;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.postContainer h1{
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.postContainer .inputGroup {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
+
+.inputGroup input, .inputGroup textarea {
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.inputGroup input {
+  height: 30px;
+}
+
+.inputGroup textarea {
+  height: 150px;
+}
+
+.postContainer button {
+  margin-top: 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #AEB6BF;
+  cursor: pointer;
+  font-size: 15px;
+  align-self: center;
+}
+
+input, textarea {
+  margin-top: 10px;
+}
+
+/* END CREATE POST */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
